@@ -1,0 +1,27 @@
+{
+    "name": "yt-for-desktop",
+    "version": "1.0.0",
+    "description": "yt for desktop apps",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dist": "electron-builder"
+    },
+    "build": {
+        "appId": "com.electron.ytdesktop",
+        "productName": "YouTube Desktop",
+        "directories": {
+            "output": "build"
+        },
+        "icon": "dist/187209.png",
+        "win": {
+            "target": "NSIS"
+        }
+    },
+    "author": "maksymkaD",
+    "devDependencies": {
+        "electron": "^22.0.0",
+        "electron-builder": "^23.6.0"
+    }
+}
