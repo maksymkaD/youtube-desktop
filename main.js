@@ -15,7 +15,8 @@ function createWindow () {
 
   // and load the index.html of the app.
   win.loadFile('dist/index.html')
-
+  //disable the top menubar
+  win.setMenu(null)
   // Open the DevTools.
   //win.webContents.openDevTools()
 
